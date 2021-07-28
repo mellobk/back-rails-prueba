@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+
+  <div style="
+    display: grid;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+"><img src="https://viewinmobiliario2.s3-sa-east-1.amazonaws.com/presente/Auth/creacion-cuenta.png" style="
+    display: grid;
+    justify-content: center;
+"><img src="https://viewinmobiliario2.s3-sa-east-1.amazonaws.com/static_assets/emails/assessor_notify/banner-no-registrado.png" style="
+    display: block;
+    margin: 0 auto;
+"><h1> <strong>Hola equipo </strong> <span style="color: red;
+    font-weight: 700;"><%=  @projectEmail[0].name %></span> </h1>,
+<p style="text-align: justify;"><span style="color: red;
+    font-weight: 700;"><%=  @lead.name %> <%=  @lead.last_name %> </span>es un usuario Vecindario que inicio su proceso de busqueda y esta interesado en tu proyecto, a continuación te compratimos sus datos ya que puede estar visitando la sala de ventas en los proximos dias</p>
+<p><strong>Nombre del cliente:</strong><%=  @lead.name %> <%=  @lead.last_name %> </p>
+<p><strong>Celular:</strong> +57 <%=  @lead.phone %> </p><p>
+<strong>correo Electronico:</strong>  <%=  @lead.email %> </p></div>
+  </body>
+</html>
